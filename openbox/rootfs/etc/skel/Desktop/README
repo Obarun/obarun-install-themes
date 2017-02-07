@@ -1,0 +1,23 @@
+Welcome to Obarun !(openbox based on archlinux with runit-init)
+
+You can find more at http://obarun.org.
+You have a forum here http://obarun.org/forum
+
+Please take a look here : http://obarun.org/wiki/mainWiki.html for basic configuration.
+
+It's not a distro. It's based on archlinux but with a lot of change.
+
+Only available for x64_86 architecture
+
+root login : root
+user login : obarun
+root password : toor
+obarun password : toor
+
+Enjoy it :).
+
+Eric Vidal <eric@obarun.org>
+
+hotkeys :
+ALT+SPACE to display the main menu of openbox
+ALT+F2 to launch gmrun

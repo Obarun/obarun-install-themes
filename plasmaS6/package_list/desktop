@@ -1,0 +1,18 @@
+######One application per line, you can use # to comment a line, blank line are ignored
+
+##			specific applications for the desktop
+
+qt5-base
+qtwebkit
+sddm
+libmm-glib
+libnm-glib
+networkmanager
+modemmanager
+libmbim
+pulseaudio
+accountsservice
+media-player-info
+
+plasma-meta
+plasma-workspace
