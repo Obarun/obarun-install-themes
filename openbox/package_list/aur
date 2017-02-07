@@ -1,0 +1,9 @@
+#####One applications per line, you can use # to comment a line, blank line are ignored
+
+asoundconf
+clipit
+connman-gtk
+compton
+obkey
+obmenu-generator
+retrovol

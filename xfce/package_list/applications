@@ -1,0 +1,28 @@
+######One application per line, you can use # to comment a line, blank line are ignored
+
+##				applications
+
+
+htop 
+icecat
+galculator-gtk2 
+geany
+geeqie
+gmrun
+gparted 
+gtk-update-icon-cache 
+gtk-engine-aurora
+gtk-engine-murrine
+gtk-engines
+lxrandr
+mc
+numlockx 
+package-query
+spacefm-obarun
+terminator 
+udevil 
+unrar 
+unzip 
+xarchiver-gtk2
+hexchat
+whaawmp

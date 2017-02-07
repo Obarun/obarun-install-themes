@@ -1,0 +1,13 @@
+######One application per line, you can use # to comment a line, blank line are ignored
+
+dbus-runitserv
+dhcpcd-runitserv
+connmand-runitserv
+connman-vpnd-runitserv
+dmraid-runitserv
+iptables-runitserv
+ip6tables-runitserv
+nfs-utils-runitserv
+rtkit-runitserv
+wpa-supplicant-runitserv
+
