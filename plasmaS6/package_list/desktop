@@ -3,7 +3,6 @@
 ##			specific applications for the desktop
 
 qt5-base
-qtwebkit
 sddm
 libmm-glib
 libnm-glib
