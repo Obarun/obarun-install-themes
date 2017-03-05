@@ -9,18 +9,17 @@ mesa-libgl
 mesa-vdpau
 libva-mesa-driver
 opencl-mesa
-xf86-input-evdev
 xf86-input-libinput
 xorg-bdftopcf 
 xorg-font-utils 
 xorg-fonts-100dpi 
 xorg-server-utils 
 xorg-xev 
-xorg-xinit 
+xorg-xinit
+xorg-xprop 
 xterm 
 xcb-util-renderutil
-libxkbcommon
-libxkbcommon-x11
+
 
 ##			driver for xorg
 
