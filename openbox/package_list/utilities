@@ -39,7 +39,6 @@ polkit
 python
 refind-efi
 rtkit
-udisks
 udisks2
 upower
 usb_modeswitch
