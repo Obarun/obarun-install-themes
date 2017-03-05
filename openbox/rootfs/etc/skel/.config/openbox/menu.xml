@@ -117,7 +117,7 @@
   </item>
   <item label="Video" icon="/usr/share/icons/Faenza/apps/24/mplayer.png">
     <action name="Execute">
-      <command>whaawmp</command>
+      <command>parole</command>
     </action>
   </item>
   <item label="Hexchat" icon="/usr/share/icons/Faenza/apps/24/xchat.png">
