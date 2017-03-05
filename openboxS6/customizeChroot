@@ -102,20 +102,13 @@ config_s6(){
 	echo_display " Enable syslogds6 service"
 	cp -ra /etc/s6-serv/available/classic/syslogds6 /etc/s6-serv/enabled/classic/
 	
-	echo_display " Create Graphics database"
-	s6opts add graphics bundle-Connman
-	s6opts add graphics bundle-Wpa-supplicant
-	s6opts add graphics bundle-Dbus
-	s6-rc-compile /etc/s6-serv/enabled/rc/compiled/Graphics /etc/s6-serv/enabled/rc/source/graphics	
+	echo_display " Create Live database"
+	s6opts add live "bundle-Connman bundle-Wpa-supplicant bundle-Dbus"
+	s6opts compile Live live	
 	
-	echo_display " Create GraphicsNfs database"
-	cp -ra /etc/s6-serv/enabled/rc/source/graphics /etc/s6-serv/enabled/rc/source/graphicsNfs
-	s6opts add graphicsNfs bundle-Nfs
-	s6-rc-compile /etc/s6-serv/enabled/rc/compiled/GraphicsNfs /etc/s6-serv/enabled/rc/source/graphicsNfs
-	
-	echo_display " Make Graphics as current database"
+	echo_display " Make Live as current database"
 	rm /etc/s6-serv/enabled/rc/compiled/current
-	ln -sf /etc/s6-serv/enabled/rc/compiled/Graphics /etc/s6-serv/enabled/rc/compiled/current
+	ln -sf /etc/s6-serv/enabled/rc/compiled/Live /etc/s6-serv/enabled/rc/compiled/current
 }
 custo_once config_s6
 
