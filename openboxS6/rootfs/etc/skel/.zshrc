@@ -373,16 +373,7 @@ alias ycRnsu="pacman -Rnsu"
 alias ycRr="pacman -R"
 alias ycQs="pacman -Qs"
 alias ycQil="pacman -Qil"
-#for yaourt
-alias yy="yaourt"
-alias yySyua="yaourt -Suya"
-alias yySy="yaourt -Sy"
-alias yyS="yaourt -S"
-alias yySs="yaourt -Ss"
-alias yyR="yaourt -R"
-alias yyRnsu="yaourt -Rnsu"
-alias yyQs="yaourt -Qs"
-alias yyQil="yaourt -Qil"
+
 
 if command -v colordiff > /dev/null 2>&1; then
     alias diff="colordiff -Nuar"
