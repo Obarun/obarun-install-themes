@@ -1,7 +1,7 @@
 # .zshrc
 # Author: Piotr Karbowski <piotr.karbowski@gmail.com>
 # License: beerware.
-
+# modified by : Eric vidal <eric@obarun.org> for obarun system
 
 # Basic zsh config.
 
@@ -11,6 +11,7 @@ HISTFILE="${ZDOTDIR}/.zsh_history"
 HISTSIZE='10000'
 SAVEHIST="${HISTSIZE}"
 export EDITOR="/usr/bin/mcedit"
+
 
 TMP=${HOME}/tmp
 if [ ! -d "${TMP}" ]; then mkdir -m1777 "${TMP}"; fi
@@ -285,7 +286,6 @@ setopt promptsubst
 # Control-x-e to open current line in $EDITOR, awesome when writting functions or editing multiline commands.
 autoload -U edit-command-line
 zle -N edit-command-line
-bindkey '^x^e' edit-command-line
 
 # Include user-specified configs.
 if [ ! -d "${ZSHDDIR}" ]; then
@@ -373,16 +373,7 @@ alias ycRnsu="pacman -Rnsu"
 alias ycRr="pacman -R"
 alias ycQs="pacman -Qs"
 alias ycQil="pacman -Qil"
-#for yaourt
-alias yy="yaourt"
-alias yySyua="yaourt -Suya"
-alias yySy="yaourt -Sy"
-alias yyS="yaourt -S"
-alias yySs="yaourt -Ss"
-alias yyR="yaourt -R"
-alias yyRnsu="yaourt -Rnsu"
-alias yyQs="yaourt -Qs"
-alias yyQil="yaourt -Qil"
+
 
 if command -v colordiff > /dev/null 2>&1; then
     alias diff="colordiff -Nuar"
@@ -394,45 +385,20 @@ alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias ls='ls --color=auto --human-readable --group-directories-first --classify'
 
+bindkey -e
 
-# Keys.
-case $TERM in
-    rxvt*|xterm*)
-        bindkey "^[[7~" beginning-of-line #Home key
-        bindkey "^[[8~" end-of-line #End key
-        bindkey "^[[3~" delete-char #Del key
-        bindkey "^[[A" history-beginning-search-backward #Up Arrow
-        bindkey "^[[B" history-beginning-search-forward #Down Arrow
-        bindkey "^[Oc" forward-word # control + right arrow
-        bindkey "^[Od" backward-word # control + left arrow
-        bindkey "^H" backward-kill-word # control + backspace
-        bindkey "^[[3^" kill-word # control + delete
-    ;;
+bindkey '^[[H' beginning-of-line # home key
+bindkey '^[[F'  end-of-line # end key
 
-    linux)
-        bindkey "^[[1~" beginning-of-line #Home key
-        bindkey "^[[4~" end-of-line #End key
-        bindkey "^[[3~" delete-char #Del key
-        bindkey "^[[A" history-beginning-search-backward
-        bindkey "^[[B" history-beginning-search-forward
-    ;;
+bindkey '^[[3~' delete-char # del key
 
-    screen|screen-*)
-        bindkey "^[[1~" beginning-of-line #Home key
-        bindkey "^[[4~" end-of-line #End key
-        bindkey "^[[3~" delete-char #Del key
-        bindkey "^[[A" history-beginning-search-backward #Up Arrow
-        bindkey "^[[B" history-beginning-search-forward #Down Arrow
-        bindkey "^[Oc" forward-word # control + right arrow
-        bindkey "^[OC" forward-word # control + right arrow
-        bindkey "^[Od" backward-word # control + left arrow
-        bindkey "^[OD" backward-word # control + left arrow
-        bindkey "^H" backward-kill-word # control + backspace
-        bindkey "^[[3^" kill-word # control + delete
-    ;;
-esac
+bindkey '^U' backward-kill-line # control + u
+bindkey "^H" backward-kill-word # control + backspace
+
+bindkey -s '^[S' '^Asudo ^E' # alt + shift + s add sudo at the beginning of the line
+
+bindkey '^[[1;5D' backward-word # control + left arrow
+bindkey '^[[1;5C' forward-word # control + right arrow
 
 bindkey "^R" history-incremental-pattern-search-backward 
 bindkey "^S" history-incremental-pattern-search-forward
-
-if [ -f ~/.alert ]; then echo '>>> Check ~/.alert'; fi

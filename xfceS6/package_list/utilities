@@ -18,6 +18,7 @@ btrfs-progs
 colord
 crda
 consolekit2
+cower
 ddrescue
 dmraid
 dosfstools 
@@ -48,7 +49,7 @@ wpa_supplicant
 xdg-utils 
 xdotool 
 wvdial
-yaourt
+#yaourt
 zd1211-firmware
 libwacom
 python2-dbus

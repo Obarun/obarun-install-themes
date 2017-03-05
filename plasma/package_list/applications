@@ -17,13 +17,12 @@ gtk-engines
 lxrandr
 mc
 numlockx 
-package-query
-spacefm-obarun
-startup-notification
+#package-query
+spacefm
 terminator 
 udevil 
 unrar 
 unzip 
 xarchiver-gtk2
 hexchat
-whaawmp
+parole
