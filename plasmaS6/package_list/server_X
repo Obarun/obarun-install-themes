@@ -29,10 +29,8 @@ xf86-video-nouveau
 xf86-video-openchrome
 xf86-input-keyboard 
 xf86-input-mouse
-xf86-input-synaptics 
 xf86-input-void 
 xf86-video-dummy 
 xf86-video-fbdev 
-xf86-video-intel 
 xf86-video-vesa 
 xf86-video-voodoo 
