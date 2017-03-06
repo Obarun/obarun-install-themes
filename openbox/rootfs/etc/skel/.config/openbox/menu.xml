@@ -133,6 +133,7 @@
   <separator/>
   <menu id="SystemArch" icon="/usr/share/icons/Faenza/categories/24/applications-system.png"/>
   <menu id="system" icon="/usr/share/icons/Faenza/categories/24/configuration_section.png"/>
+  <menu id="runitcontrol" label="Runit" execute="~/.config/pipe_menu/runit_pipe" icon="/usr/share/icons/Faenza/categories/24/applications-system.png"/>
   <separator/>
   <menu id="worlddate" label="WorldDate" execute="~/.config/pipe_menu/date.sh" icon="/usr/share/icons/Faenza/status/scalable/appointment-soon.svg"/>
   <separator/>
