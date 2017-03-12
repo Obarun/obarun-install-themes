@@ -2,7 +2,7 @@
 
 ##			specific applications for the desktop
 
-qt5-bases
+qt5-base
 sddm
 libmm-glib
 libnm-glib
