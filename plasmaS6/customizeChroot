@@ -103,7 +103,7 @@ config_s6(){
 	cp -ra /etc/s6-serv/available/classic/syslogds6 /etc/s6-serv/enabled/classic/
 	
 	echo_display " Create Live database"
-	s6opts add live "bundle-Connman bundle-Wpa-supplicant bundle-Dbus bundle-Networkmanager"
+	s6opts add live "bundle-Dbus bundle-Networkmanager"
 	s6opts compile Live live	
 	
 	echo_display " Make Live as current database"
