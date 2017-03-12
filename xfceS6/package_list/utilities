@@ -53,6 +53,8 @@ zd1211-firmware
 libwacom
 python2-dbus
 dbus
+gvfs
+gvfs-mtp
 
 ##			obarun stuff
 
