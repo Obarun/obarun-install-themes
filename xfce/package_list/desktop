@@ -12,6 +12,7 @@ libmbim
 pulseaudio
 accountsservice
 media-player-info
+dhclient
 
 cantarell-fonts
 gnome-icon-theme
