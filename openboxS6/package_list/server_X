@@ -5,7 +5,6 @@
 xorg-server
 xorg-server-common
 mesa
-mesa-libgl
 mesa-vdpau
 libva-mesa-driver
 opencl-mesa
