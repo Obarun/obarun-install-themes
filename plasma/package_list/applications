@@ -4,7 +4,7 @@
 
 
 htop 
-icecat
+#icecat
 galculator-gtk2 
 geany
 geeqie
@@ -18,6 +18,7 @@ lxrandr
 mc
 numlockx 
 #package-query
+palemoon-bin
 spacefm
 terminator 
 udevil 
