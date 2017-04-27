@@ -90,9 +90,9 @@
       <command>sudo spacefm</command>
     </action>
   </item>
-  <item label="Icecat" icon="/usr/share/icons/hicolor/32x32/apps/icecat.png">
+  <item label="Palemoon" icon="/usr/share/icons/hicolor/32x32/apps/palemoon.png">
     <action name="Execute">
-      <command>icecat</command>
+      <command>palemoon</command>
     </action>
   </item>
   <item label="Geany" icon="/usr/share/icons/Faenza/apps/24/geany.png">
@@ -133,6 +133,7 @@
   <separator/>
   <menu id="SystemArch" icon="/usr/share/icons/Faenza/categories/24/applications-system.png"/>
   <menu id="system" icon="/usr/share/icons/Faenza/categories/24/configuration_section.png"/>
+  <menu id="runitcontrol" label="Runit" execute="~/.config/pipe_menu/runit_pipe" icon="/usr/share/icons/Faenza/categories/24/applications-system.png"/>
   <separator/>
   <menu id="worlddate" label="WorldDate" execute="~/.config/pipe_menu/date.sh" icon="/usr/share/icons/Faenza/status/scalable/appointment-soon.svg"/>
   <separator/>
