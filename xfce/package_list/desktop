@@ -3,6 +3,7 @@
 ##			specific applications for the desktop
 
 qt5-base
+qt5-xcb-private-headers
 sddm
 libmm-glib
 libnm-glib
