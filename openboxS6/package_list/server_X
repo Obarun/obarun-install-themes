@@ -11,8 +11,7 @@ opencl-mesa
 xf86-input-libinput
 xorg-bdftopcf 
 xorg-font-utils 
-xorg-fonts-100dpi 
-xorg-server-utils 
+xorg-fonts-100dpi
 xorg-xev 
 xorg-xinit
 xorg-xprop 
