@@ -30,7 +30,7 @@ package() {
 	install -Dm 0644 "PKGBUILD" "$pkgdir/var/lib/obarun/obarun-install-themes/update_package/PKGBUILD"
 	
 	# make a loop for all present directories
-	for k in openbox openboxS6 plasma plasmaS6 xfce xfceS6;do
+	for k in openboxS6 plasmaS6 xfceS6;do
 		install -Dm 0755 "$k/customizeChroot" "$pkgdir/var/lib/obarun/obarun-install/config/$k/customizeChroot"
 		install -Dm 0644 "$k/pacman.conf" "$pkgdir/var/lib/obarun/obarun-install/config/$k/pacman.conf"
 		for i in $k/package_list/*;do
