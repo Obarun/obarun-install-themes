@@ -1,9 +1,0 @@
-#setxkbmap fr & ## uncomment if you want fr keyboard on X
-connman-gtk &
-numlockx & 
-spacefm --desktop -d & 
-clipit &
-retrovol -hide & 
-tint2 -c ~/.config/tint2/tint2rc & 
-compton --config ~/.config/compton.conf & 
- 
