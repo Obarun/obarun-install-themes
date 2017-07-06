@@ -11,7 +11,7 @@ sourcing(){
 	
 	local list
 	
-	for list in /tmp/obarun-install-tmp/{common_functions,install_functions,install.conf}; do
+	for list in /tmp/obarun-install-tmp/{install.conf,common_functions,install_functions}; do
 		if [[ -f "${list}" ]]; then
 			source "${list}"
 		else
