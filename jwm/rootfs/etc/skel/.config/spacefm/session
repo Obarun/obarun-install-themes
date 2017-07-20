@@ -1,0 +1,25 @@
+# Fichier de session de SpaceFM
+
+# CE FICHIER N'EST PAS DESTINÉ À ÊTRE MODIFIÉ - il sera lu et ÉCRASÉ
+
+# Si vous supprimez tous les fichiers « session* », SpaceFM sera réinitialisé à ses valeurs par défaut.
+
+[General]
+big_icon_size=36
+small_icon_size=16
+tool_icon_size=1
+
+[Window]
+width=1616
+height=994
+maximized=0
+
+[Desktop]
+show_wallpaper=1
+wallpaper=/usr/share/wallpapers/balls.jpg
+show_wm_menu=1
+bg1=4656,4125,12014
+bg2=0,0,11296
+text=65535,65535,65535
+shadow=0,0,0
+
