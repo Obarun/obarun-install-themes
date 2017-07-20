@@ -1,0 +1,18 @@
+######One application per line, you can use # to comment a line, blank line are ignored
+
+##			specific applications for the desktop
+
+jwm
+xdgmenumaker
+obshutdown-git
+lxappearance
+
+## themes
+
+arc-gtk-theme
+faenza-icon-theme
+hicolor-icon-theme 
+gtk-update-icon-cache 
+gtk-engine-aurora
+gtk-engine-murrine
+gtk-engines

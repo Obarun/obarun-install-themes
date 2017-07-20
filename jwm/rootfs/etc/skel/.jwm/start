@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<JWM>
+	<StartupCommand>spacefm --desktop -d</StartupCommand>
+	<StartupCommand>numlockx</StartupCommand>
+	<StartupCommand>clipit</StartupCommand>
+	<StartupCommand>compton --config ~/.config/compton.conf</StartupCommand>
+	<StartupCommand>setxkbmap fr</StartupCommand>
+	<StartupCommand>connman-gtk</StartupCommand>
+	<StartupCommand>hexchat</StartupCommand>
+	<!--StartupCommand>pulseaudio --start</StartupCommand-->
+	<StartupCommand>volumeicon</StartupCommand>
+</JWM>
+
