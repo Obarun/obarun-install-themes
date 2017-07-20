@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu>
+
+<menu id="SystemArch" label="SystemArch">
+  <item label="Themes" icon="/usr/share/icons/Faenza/apps/scalable/preferences-desktop-theme.svg">
+    <action name="Execute">
+      <command>lxappearance</command>
+    </action>
+  </item>
+  <item label="Tint2" icon="/usr/share/icons/hicolor/scalable/apps/tint2.svg">
+    <action name="Execute">
+      <command>tint2conf</command>
+    </action>
+  </item>
+  <item label="Sound Card" icon="/usr/share/icons/Faenza/categories/scalable/multimedia_section.svg">
+    <action name="Execute">
+      <command>asoundconf-gtk</command>
+    </action>
+  </item>
+  <menu id="ecran" label="Screen" icon="/usr/share/icons/Faenza/apps/scalable/preferences-system-network.svg">
+    <item label="Screen choose" icon="/usr/share/icons/Faenza/apps/scalable/preferences-system-network.svg">
+      <action name="Execute">
+        <command>lxrandr</command>
+      </action>
+    </item>
+    <item label="Screen dispo" icon="/usr/share/icons/Faenza/apps/scalable/preferences-system-network.svg">
+      <action name="Execute">
+        <command>arandr</command>
+      </action>
+    </item>
+  </menu>
+</menu>
+<menu id="system" label="SystemOpenbox">
+  <item label="Autostart" icon="/usr/share/icons/Faenza/mimetypes/scalable/gnome-mime-text-x-csharp.svg">
+    <action name="Execute">
+      <command>geany ~/.config/openbox/autostart</command>
+    </action>
+  </item>
+  <item label="Kickshaw" icon="/usr/share/icons/Faenza/categories/24/applications-interfacedesign.png">
+    <action name="Execute">
+      <command>kickshaw</command>
+    </action>
+  </item>
+  <item label="Obkey" icon="/usr/share/icons/Faenza/mimetypes/scalable/gnome-mime-text-x-csharp.svg">
+    <action name="Execute">
+      <command>obkey</command>
+    </action>
+  </item>
+  <item label="Obconf" icon="/usr/share/icons/Faenza/categories/24/applications-interfacedesign.png">
+    <action name="Execute">
+      <command>obconf</command>
+    </action>
+  </item>
+  <item label="Menu.xml" icon="/usr/share/icons/Faenza/mimetypes/scalable/text-plain.svg">
+    <action name="Execute">
+      <command>geany ~/.config/openbox/menu.xml</command>
+    </action>
+  </item>
+  <menu id="obmenugenerator" label="ObmenuGenerator" icon="/usr/share/icons/Faenza/categories/24/configuration_section.png">
+    <item label="Config" icon="/usr/share/icons/Faenza/mimetypes/scalable/text-plain.svg">
+      <action name="Execute">
+        <command>geany ~/.config/obmenu-generator/config.pl</command>
+      </action>
+    </item>
+    <item label="Schema" icon="/usr/share/icons/Faenza/mimetypes/scalable/text-plain.svg">
+      <action name="Execute">
+        <command>geany ~/.config/obmenu-generator/schema.pl</command>
+      </action>
+    </item>
+  </menu>
+</menu>
+
+<menu id="root-menu" label="Openbox 3">
+  <item label="Run program">
+    <action name="Execute">
+      <command>gmrun</command>
+    </action>
+  </item>
+  <separator/>
+  <menu id="applications" label="Software" execute="obmenu-generator -u -i" icon="/usr/share/icons/Faenza/categories/24/applications-other.png"/>
+  <separator/>
+  <item label="Spacefm" icon="/usr/share/icons/Faenza/apps/24/file-manager.png">
+    <action name="Execute">
+      <command>spacefm</command>
+    </action>
+  </item>
+  <item label="Spacefm root" icon="/usr/share/icons/Faenza/apps/24/file-manager.png">
+    <action name="Execute">
+      <command>sudo spacefm</command>
+    </action>
+  </item>
+  <item label="Palemoon" icon="/usr/share/icons/hicolor/32x32/apps/palemoon.png">
+    <action name="Execute">
+      <command>palemoon</command>
+    </action>
+  </item>
+  <item label="Geany" icon="/usr/share/icons/Faenza/apps/24/geany.png">
+    <action name="Execute">
+      <command>geany</command>
+    </action>
+  </item>
+  <item label="Geany root" icon="/usr/share/icons/Faenza/apps/24/geany.png">
+    <action name="Execute">
+      <command>sudo geany</command>
+    </action>
+  </item>
+  <item label="Terminator" icon="/usr/share/icons/Faenza/apps/24/terminator.png">
+    <action name="Execute">
+      <command>terminator</command>
+    </action>
+  </item>
+  <item label="Pictures" icon="/usr/share/icons/Faenza/apps/24/gpicview.png">
+    <action name="Execute">
+      <command>geeqie</command>
+    </action>
+  </item>
+  <item label="Video" icon="/usr/share/icons/Faenza/apps/24/mplayer.png">
+    <action name="Execute">
+      <command>parole</command>
+    </action>
+  </item>
+  <item label="Hexchat" icon="/usr/share/icons/Faenza/apps/24/xchat.png">
+    <action name="Execute">
+      <command>hexchat</command>
+    </action>
+  </item>
+  <item label="Calculator" icon="/usr/share/icons/Faenza/apps/24/galculator.png">
+    <action name="Execute">
+      <command>galculator</command>
+    </action>
+  </item>
+  <separator/>
+  <menu id="SystemArch" icon="/usr/share/icons/Faenza/categories/24/applications-system.png"/>
+  <menu id="system" icon="/usr/share/icons/Faenza/categories/24/configuration_section.png"/>
+  <separator/>
+  <menu id="worlddate" label="WorldDate" execute="~/.config/pipe_menu/date.sh" icon="/usr/share/icons/Faenza/status/scalable/appointment-soon.svg"/>
+  <separator/>
+  <item label="Reconfigure" icon="/usr/share/icons/Faenza/actions/24/system-restart-panel.png">
+    <action name="restart"/>
+  </item>
+  <item label="Exit" icon="/usr/share/icons/Faenza/actions/24/exit.png">
+    <action name="Execute">
+      <command>obshutdown -c ~/.config/obshut/exit.rc</command>
+    </action>
+  </item>
+</menu>
+
+</openbox_menu>
