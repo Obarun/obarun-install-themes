@@ -1,2 +1,2 @@
 typeset -U path
-path=(/usr/bin: /bin: /usr/local/bin: /usr/local/sbin: /usr/share/man: /opt/\*: $path)
+path=(/usr/local/bin: /usr/bin: /bin: /sbin: /usr/share/man: /opt/: $path)

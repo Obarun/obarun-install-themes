@@ -15,10 +15,6 @@ accountsservice
 media-player-info
 dhclient
 
-cantarell-fonts
-gnome-icon-theme
-gnome-icon-theme-symbolic
-gnome-themes-standard
 libxfce4ui  
 libxfce4util
 libxklavier
@@ -27,3 +23,16 @@ network-manager-applet
 
 xfce4
 xfce4-goodies
+
+## themes
+
+arc-gtk-theme
+faenza-icon-theme
+hicolor-icon-theme 
+gtk-update-icon-cache 
+gtk-engine-aurora
+gtk-engine-murrine
+gtk-engines
+gnome-icon-theme
+gnome-icon-theme-symbolic
+gnome-themes-standard

@@ -69,24 +69,6 @@ confirm() {
     fi
 }
 
-confirm_wrapper() {
-    if [ "$1" = '--root' ]; then
-        local as_root='true'
-        shift
-    fi
-
-    local prefix=''
-
-    if [ "${as_root}" = 'true' ] && [ "${USER}" != 'root' ]; then
-        prefix="sudo"
-    fi
-    confirm ${prefix} "$@"
-}
-
-poweroff() { confirm_wrapper --root $0 "$@"; }
-reboot() { confirm_wrapper --root $0 "$@"; }
-hibernate() { confirm_wrapper --root $0 "$@"; }
-
 detox() {
     if [ "$#" -ge 1 ]; then
         confirm detox "$@"
@@ -384,6 +366,8 @@ fi
 alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias ls='ls --color=auto --human-readable --group-directories-first --classify'
+##replace mygpg by your own
+alias sign='gpg --detach-sign --use-agent -u mygpg --no-armor' 
 
 bindkey -e
 

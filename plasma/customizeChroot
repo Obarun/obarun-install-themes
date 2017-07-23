@@ -90,7 +90,6 @@ custo_once check_gpg
 
 create_log_user(){
 	echo_display " add {root,$NEWUSER} at log group"
-	gpasswd -a root log
 	gpasswd -a "$NEWUSER" log
 }
 custo_once create_log_user 

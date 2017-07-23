@@ -69,24 +69,6 @@ confirm() {
     fi
 }
 
-confirm_wrapper() {
-    if [ "$1" = '--root' ]; then
-        local as_root='true'
-        shift
-    fi
-
-    local prefix=''
-
-    if [ "${as_root}" = 'true' ] && [ "${USER}" != 'root' ]; then
-        prefix="sudo"
-    fi
-    confirm ${prefix} "$@"
-}
-
-poweroff() { confirm_wrapper --root $0 "$@"; }
-reboot() { confirm_wrapper --root $0 "$@"; }
-hibernate() { confirm_wrapper --root $0 "$@"; }
-
 detox() {
     if [ "$#" -ge 1 ]; then
         confirm detox "$@"
@@ -353,7 +335,7 @@ case "$(uname -o)" in
 esac
 
 # Aliases
-#alias sudo='sudo'
+#alias sudo='sudo '
 alias cp='cp -iv'
 alias rcp='rsync -v --progress'
 alias rmv='rsync -v --progress --remove-source-files'
@@ -364,15 +346,15 @@ alias ln='ln -v'
 alias chmod="chmod -c"
 alias chown="chown -c"
 #for pacman
-alias yc="pacman"
-alias ycSyy="pacman -Syy"
-alias ycSyu="pacman -Syu"
-alias ycSs="pacman -Ss"
-alias ycS="pacman -S"
-alias ycRnsu="pacman -Rnsu"
-alias ycRr="pacman -R"
-alias ycQs="pacman -Qs"
-alias ycQil="pacman -Qil"
+#alias yc="pacman"
+#alias ycSyy="pacman -Syy"
+#alias ycSyu="pacman -Syu"
+#alias ycSs="pacman -Ss"
+#alias ycS="pacman -S"
+#alias ycRnsu="pacman -Rnsu"
+#alias ycRr="pacman -R"
+#alias ycQs="pacman -Qs"
+#alias ycQil="pacman -Qil"
 
 
 if command -v colordiff > /dev/null 2>&1; then
@@ -384,6 +366,8 @@ fi
 alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias ls='ls --color=auto --human-readable --group-directories-first --classify'
+##replace mygpg by your own
+alias sign='gpg --detach-sign --use-agent -u mygpg --no-armor' 
 
 bindkey -e
 

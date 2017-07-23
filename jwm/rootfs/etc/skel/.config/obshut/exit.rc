@@ -9,7 +9,7 @@ theme =          faenza
 buttons =        cancel logout shutdown restart
 
 [actions]
-logout =         openbox --exit
+logout =         jwm -exit
 shutdown =       sudo poweroff
 restart =        sudo reboot
 lock = 

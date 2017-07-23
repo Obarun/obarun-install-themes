@@ -3,27 +3,22 @@
 ##				applications
 
 
-htop 
-#icecat
+clipit
+epdfview
 galculator-gtk2 
 geany
 geeqie
 gmrun
 gparted 
-gtk-update-icon-cache 
-gtk-engine-aurora
-gtk-engine-murrine
-gtk-engines
+hexchat
+htop 
 lxrandr
 mc
-numlockx 
-#package-query
-palemoon-bin
+midori
+parole
 spacefm
 terminator 
 udevil 
 unrar 
 unzip 
 xarchiver-gtk2
-hexchat
-parole
