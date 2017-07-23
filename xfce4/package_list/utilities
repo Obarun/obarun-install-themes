@@ -18,12 +18,11 @@ btrfs-progs
 colord
 crda
 consolekit2
-cower
+dbus
 ddrescue
 dmraid
 dosfstools 
 elinks 
-faenza-icon-theme
 git
 haveged
 libatasmart
@@ -31,8 +30,10 @@ libinput
 libpulse
 libcups
 libsynaptics
+libwacom
 nfs-utils
-ntfs-3g 
+ntfs-3g
+numlockx 
 parted 
 perl-file-mimeinfo 
 polkit
@@ -45,20 +46,14 @@ usb_modeswitch
 wget 
 wireless_tools 
 wpa_supplicant
-xdg-utils 
-xdotool 
 wvdial
-#yaourt
+xdg-utils 
 zd1211-firmware
-libwacom
-python2-dbus
-dbus
-gvfs
-gvfs-mtp
 
 ##			obarun stuff
 
 obarun-install
+obarun-install-themes
 pacopts
 obarun-keyring
 

@@ -2,18 +2,7 @@
 
 ##				fonts
 
-font-bh-ttf 
-font-bitstream-speedo 
 fontconfig 
 fontsproto 
-freetype2 
-artwiz-fonts
 gsfonts 
-ttf-bitstream-vera 
-ttf-cheapskate 
-ttf-dejavu 
 ttf-liberation
-
-##				icons theme
-
-hicolor-icon-theme 

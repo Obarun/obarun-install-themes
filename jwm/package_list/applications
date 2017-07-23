@@ -8,7 +8,6 @@ connman
 connman-gtk
 compton
 epdfview
-#icecat
 galculator-gtk2 
 geany
 geeqie
@@ -20,8 +19,6 @@ lxrandr
 mc
 midori
 parole
-#package-query
-#palemoon-bin
 spacefm
 terminator 
 udevil 
@@ -29,5 +26,5 @@ unrar
 unzip 
 volumeicon
 xarchiver-gtk2
-#retrovol
+
 

@@ -18,6 +18,7 @@ btrfs-progs
 colord
 crda
 consolekit2
+dbus
 ddrescue
 dmraid
 dosfstools 
@@ -29,6 +30,7 @@ libinput
 libpulse
 libcups
 libsynaptics
+libwacom
 nfs-utils
 ntfs-3g
 numlockx 
@@ -44,12 +46,9 @@ usb_modeswitch
 wget 
 wireless_tools 
 wpa_supplicant
-xdg-utils 
-#xdotool 
 wvdial
+xdg-utils 
 zd1211-firmware
-libwacom
-dbus
 
 ##			obarun stuff
 

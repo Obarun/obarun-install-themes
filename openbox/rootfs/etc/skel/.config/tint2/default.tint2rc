@@ -58,7 +58,7 @@ task_urgent_icon_asb = 100 0 0
 task_iconified_icon_asb = 100 0 0
 
 # Fonts
-task_font = Comic Sans MS Bold Italic 10
+task_font = Liberation Sans Bold Italic 10
 task_font_color = #000000 60
 task_active_font_color = #347AAE 100
 task_urgent_font_color = #000000 100
@@ -75,7 +75,7 @@ systray_icon_asb = 100 -90 -15
 
 # Clock
 time1_format = %H:%M:%S
-time1_font = Linux Libertine 10
+time1_font = Liberation Sans 10
 clock_font_color = #398ECF 100
 clock_padding = 0 0
 clock_background_id = 0

@@ -90,9 +90,9 @@
       <command>sudo spacefm</command>
     </action>
   </item>
-  <item label="Palemoon" icon="/usr/share/icons/hicolor/32x32/apps/palemoon.png">
+  <item label="Midori" icon="/usr/share/icons/Faenza/apps/24/midori.png">
     <action name="Execute">
-      <command>palemoon</command>
+      <command>midori</command>
     </action>
   </item>
   <item label="Geany" icon="/usr/share/icons/Faenza/apps/24/geany.png">
