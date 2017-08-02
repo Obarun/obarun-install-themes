@@ -1,21 +1,25 @@
-#!/bin/bash
+#!/usr/bin/bash
+#
+# Authors:
+# Eric Vidal <eric@obarun.org>
+#
+# Copyright (C) 2015-2017 Eric Vidal <eric@obarun.org>
+#
 ## This script was made for provide obarun environment. This scripts is under license BEER-WARE.
 # "THE BEER-WARE LICENSE" (Revision 42):
 # <eric@obarun.org> wrote this file.  As long as you retain this notice you
 # can do whatever you want with this stuff. If we meet some day, and you think
 # this stuff is worth it, you can buy me a beer in return.   Eric Vidal
 
-##		Check is the functions file exits
-
 sourcing(){
 	
 	local list
 	
-	for list in /tmp/obarun-install-tmp/{install.conf,common_functions,install_functions}; do
+	for list in /tmp/obarun-install-tmp/install.conf /usr/lib/obarun/util.sh; do
 		if [[ -f "${list}" ]]; then
 			source "${list}"
 		else
-			echo_error " Missing file : ${list}"
+			out_error "Missing file : ${list}"
 			exit	
 		fi
 	done
@@ -24,72 +28,27 @@ sourcing(){
 }
 sourcing
 
-shellopts_save
-shellopts_set_unset "extglob" 0
-
 custo_once() {
-	local _tmp
+	local _tmp cmd
+	cmd="${1}"
 	_tmp="/tmp/obarun-install-tmp"
 	
 	if [[ ! -d $_tmp ]]; then
-		mkdir -p -m0750 $_tmp || die " Impossible to create $_tmp"
+		mkdir -p -m0755 $_tmp || die "Impossible to create $_tmp"
 	fi
-    if [[ ! -e $_tmp/customize.${1} ]]; then
-        $1 || die " Cannot execute $_"
-        touch $_tmp/customize.${1}
-    fi
+    if [[ ! -e $_tmp/customize.${cmd} ]]; then
+        "${cmd}" || die "Cannot execute $_"
+        touch $_tmp/customize.${cmd}
+    else
+		return
+	fi
     unset _tmp
 }
-
-##		Customize menu
-
-customizeChroot_menu
-
-# reload source file before using changed variable
-source /tmp/obarun-install-tmp/install.conf
-
-custo_once config_custofile
-
-##		Define resolv.conf
-def_resolv(){
-	define_resolv 
-}
-custo_once def_resolv 
-
-##		Uncomment server in mirrorlist
-mirrorlist(){
-	echo_display " Uncomment server in mirrorlist"
-	sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
-}
-custo_once mirrorlist 
-
-##		Pacman stuff
-pac_sync(){
-echo_display " Synchronize database..."
-if [[ ! -d /var/lib/pacman/sync ]]; then 
-    pacman -Syy
-else
-	pacman -Sy
-fi
-}
-custo_once pac_sync 
-
-## Configure pacman.conf
-
-config_pac(){
-	echo_display " Change pacman.conf configuration"
-	sed -i "s:SigLevel = Never.*#:SigLevel = Required DatabaseOptional:" /etc/pacman.conf
-	sed -i "s:#SigLevel = PackageRequired:SigLevel = PackageRequired:" /etc/pacman.conf
-}
-custo_once config_pac
-
-## Check if gpg exist, if not launch pacman-key and add gpg signature
-custo_once check_gpg
 
 ############################## only modifie this script after this line ############################
 
 create_log_user(){
-	echo_display " add {$NEWUSER} at log group"
+	out_action "add ${NEWUSER} at log group"
 	gpasswd -a "$NEWUSER" log
 }
 custo_once create_log_user 
@@ -98,14 +57,14 @@ custo_once create_log_user
 
 config_s6(){
 	
-	echo_display " Enable syslogds6 service"
+	out_action "Enable syslogds6 service"
 	cp -ra /etc/s6-serv/available/classic/syslogds6 /etc/s6-serv/enabled/classic/
 	
-	echo_display " Create Live database"
+	out_action "Create Live database"
 	s6opts add live "bundle-Connman bundle-Wpa-supplicant bundle-Dbus"
 	s6opts compile Live live	
 	
-	echo_display " Make Live as current database"
+	out_action "Make Live as current database"
 	rm /etc/s6-serv/enabled/rc/compiled/current
 	ln -sf /etc/s6-serv/enabled/rc/compiled/Live /etc/s6-serv/enabled/rc/compiled/current
 }
@@ -127,23 +86,10 @@ custo_once connman_bug
 ##		Remove systemd stuff
 
 rm_systemd(){
-	echo_display " Removing systemd stuff"
+	out_action "Removing systemd stuff"
 	rm -r /usr/lib/systemd
 }
 custo_once rm_systemd
 
-##		Install bootloader
-
-install_boot(){
-	echo_display " Do you want to install ${green}[syslinux]${reset}${bold} bootloader [y|n] :"
-	reply_answer 
-	if (( ! $? )); then
-		syslinux_menu
-	fi
-}
-custo_once install_boot
-
-shellopts_restore
-
-echo_valid " Customization terminate"
+out_valid "Customization terminate"
 
