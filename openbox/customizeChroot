@@ -84,12 +84,4 @@ connman_bug(){
 }
 custo_once connman_bug
 
-##		Remove systemd stuff
-
-rm_systemd(){
-	out_action "Removing systemd stuff"
-	rm -r /usr/lib/systemd
-}
-custo_once rm_systemd
-
 out_valid "Customization terminate"
