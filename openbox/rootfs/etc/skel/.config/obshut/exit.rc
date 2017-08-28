@@ -10,8 +10,8 @@ buttons =        cancel logout shutdown restart
 
 [actions]
 logout =         openbox --exit
-shutdown =       sudo poweroff
-restart =        sudo reboot
+shutdown =       dbus-send --system --print-reply --dest="org.freedesktop.ConsoleKit" /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop
+restart =        dbus-send --system --print-reply --dest="org.freedesktop.ConsoleKit" /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Restart
 lock = 
 switch = 
 suspend =        dbus-send --system --print-reply --dest="org.freedesktop.UPower" /org/freedesktop/UPower org.freedesktop.UPower.Suspend
