@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <JWM>
+	<StartupCommand>/usr/lib/notification-daemon-1.0/notification-daemon</StartupCommand>
 	<StartupCommand>spacefm --desktop -d</StartupCommand>
 	<StartupCommand>numlockx</StartupCommand>
 	<StartupCommand>clipit</StartupCommand>

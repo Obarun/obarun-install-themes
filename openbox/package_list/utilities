@@ -26,12 +26,13 @@ elinks
 git
 haveged
 libatasmart
+libcups
 libinput
 libpulse
-libcups
 libsynaptics
 libwacom
 nfs-utils
+notification-daemon
 ntfs-3g
 numlockx 
 parted 
