@@ -49,6 +49,7 @@ wireless_tools
 wpa_supplicant
 wvdial
 xdg-utils 
+xorg-xkill
 zd1211-firmware
 
 ##			obarun stuff
