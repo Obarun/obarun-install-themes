@@ -1,15 +1,12 @@
-#!/usr/bin/bash
-#
-# Authors:
-# Eric Vidal <eric@obarun.org>
-#
-# Copyright (C) 2015-2017 Eric Vidal <eric@obarun.org>
-#
-## This script was made for provide obarun environment. This scripts is under license BEER-WARE.
-# "THE BEER-WARE LICENSE" (Revision 42):
-# <eric@obarun.org> wrote this file.  As long as you retain this notice you
-# can do whatever you want with this stuff. If we meet some day, and you think
-# this stuff is worth it, you can buy me a beer in return.   Eric Vidal
+#!@BINDIR@/bash
+# Copyright (c) 2015-2017 Eric Vidal <eric@obarun.org>
+# All rights reserved.
+# 
+# This file is part of Obarun. It is subject to the license terms in
+# the LICENSE file found in the top-level directory of this
+# distribution and at https://github.com/Obarun/obarun-install-themes/LICENSE
+# This file may not be copied, modified, propagated, or distributed
+# except according to the terms contained in the LICENSE file.
 
 sourcing(){
 	
@@ -59,23 +56,25 @@ config_s6(){
 	
 	out_action "Enable syslogds6 service"
 	cp -ra /etc/s6-serv/available/classic/syslogds6 /etc/s6-serv/enabled/classic/
+	out_action "Enable dbus service"
+	cp -ra /etc/s6-serv/available/classic/dbus /etc/s6-serv/enabled/classic/
 	
 	out_action "Create Live database"
-	s6opts add live "bundle-Connman bundle-Wpa-supplicant bundle-Dbus"
+	s6opts add live bundle-Connman bundle-Wpa-supplicant
 	s6opts compile Live live	
 	
 	out_action "Make Live as current database"
 	rm /etc/s6-serv/enabled/rc/compiled/current
 	ln -sf /etc/s6-serv/enabled/rc/compiled/Live /etc/s6-serv/enabled/rc/compiled/current
+	
+	out_action "Create directories for user supervision tree"
+	su "${NEWUSER}" -c "s6opts user"
+	out_action "Enable dbus service for ${NEWUSER} user"
+	su "${NEWUSER}" -c "cp -ra /etc/s6-serv/available/user/classic/dbus /home/${NEWUSER}/service/enabled/classic/"
+	out_action "Create ${NEWUSER} log directory for dbus"
+	su "${NEWUSER}" -c "s6opts checklog dbus"
 }
 custo_once config_s6
-
-rc_local(){
-	sed -i '1s/^/#!\/bin\/bash\n/' /etc/s6/data/scripts/s6.local
-	sed -i '$a/usr/bin/pacopts applytmp' /etc/s6/data/scripts/s6.local
-	sed -i 's:^S6LOCAL.*$:S6LOCAL=yes:' /etc/s6/s6.conf
-}
-custo_once rc_local
 
 # fix dbus bugs about network permissions
 connman_bug(){
