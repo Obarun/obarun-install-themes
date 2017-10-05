@@ -1,7 +1,8 @@
 ######One application per line, you can use # to comment a line, blank line are ignored
 
-##			base no-systemd
+##			base
 
+applysys
 bash
 bzip2
 coreutils
