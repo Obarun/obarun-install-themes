@@ -1,3 +1,12 @@
+# Copyright (c) 2015-2017 Eric Vidal <eric@obarun.org>
+# All rights reserved.
+# 
+# This file is part of Obarun. It is subject to the license terms in
+# the LICENSE file found in the top-level directory of this
+# distribution and at https://github.com/Obarun/obarun-install-themes/LICENSE
+# This file may not be copied, modified, propagated, or distributed
+# except according to the terms contained in the LICENSE file.
+#
 # Maintainer: Obarun-install-themes templates <eric@obarun.org>
 # DO NOT EDIT this PKGBUILD if you don't know what you do
 
@@ -7,7 +16,7 @@ pkgrel=1
 pkgdesc="Templates for automatic installation by obarun-install"
 arch=(x86_64)
 url="file:///var/lib/obarun/$pkgname/update_package/$pkgname"
-license=(BEERWARE)
+license=(ISC)
 depends=(obarun-install)
 #install=
 source=("$pkgname::git+file:///var/lib/obarun/$pkgname/update_package/$pkgname")
@@ -20,6 +29,7 @@ pkgver() {
 		read "$rev-parse" <<< "$git_version"
 		printf '%s' "$git_version"
 	fi
+	#git describe --tags | sed -e 's/_/\./g;s/-/+/g;s/^v//'
 }
 
 package() {
