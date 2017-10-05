@@ -2,6 +2,7 @@
 
 
 dbus-s6rcserv
+dbus-s6serv
 dhcpcd-s6rcserv
 connmand-s6rcserv
 dmraid-s6rcserv
