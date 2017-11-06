@@ -13,7 +13,6 @@ crda
 dbus
 dmraid
 dosfstools 
-#elinks 
 git
 libatasmart
 libinput
@@ -33,7 +32,6 @@ usb_modeswitch
 wget 
 wireless_tools 
 wpa_supplicant
-#wvdial
 xdg-user-dirs
 zd1211-firmware
 
