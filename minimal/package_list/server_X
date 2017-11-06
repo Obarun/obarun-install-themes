@@ -1,0 +1,5 @@
+######One application per line, you can use # to comment a line, blank line are ignored
+
+##			X server
+
+##			driver for xorg

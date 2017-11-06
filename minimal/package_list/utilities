@@ -1,0 +1,46 @@
+######One application per line, you can use # to comment a line, blank line are ignored
+
+##				boot loader
+
+syslinux
+gptfdisk
+
+##				utilities
+
+btrfs-progs 
+colord
+crda
+dbus
+dmraid
+dosfstools 
+#elinks 
+git
+libatasmart
+libinput
+libsynaptics
+libwacom
+nfs-utils
+ntfs-3g
+parted 
+perl-file-mimeinfo 
+polkit
+python
+refind-efi
+rtkit
+udisks2
+upower
+usb_modeswitch
+wget 
+wireless_tools 
+wpa_supplicant
+#wvdial
+xdg-user-dirs
+zd1211-firmware
+
+##			obarun stuff
+
+pacopts
+obarun-keyring
+obarun-zsh
+
+## 			codec
