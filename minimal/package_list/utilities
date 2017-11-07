@@ -5,16 +5,19 @@
 syslinux
 gptfdisk
 
+##				console browser
+
+#elinks
+#lynx
+#w3m
+
 ##				utilities
 
 btrfs-progs 
-colord
 crda
-dbus
 dmraid
 dosfstools 
 git
-libatasmart
 libinput
 libsynaptics
 libwacom
@@ -22,17 +25,13 @@ nfs-utils
 ntfs-3g
 parted 
 perl-file-mimeinfo 
-polkit
 python
 refind-efi
-rtkit
 udisks2
-upower
 usb_modeswitch
 wget 
 wireless_tools 
 wpa_supplicant
-xdg-user-dirs
 zd1211-firmware
 
 ##			obarun stuff
@@ -41,4 +40,3 @@ pacopts
 obarun-keyring
 obarun-zsh
 
-## 			codec
