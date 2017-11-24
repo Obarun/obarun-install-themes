@@ -4,6 +4,7 @@ numlockx &
 spacefm --desktop -d & 
 clipit &
 volumeicon &
-tint2 -c ~/.config/tint2/tint2rc & 
+tint2 -c ~/.config/tint2/tint2rc &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 compton --config ~/.config/compton.conf & 
  
