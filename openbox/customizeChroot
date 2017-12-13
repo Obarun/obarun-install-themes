@@ -77,10 +77,4 @@ config_s6(){
 }
 custo_once config_s6
 
-# fix dbus bugs about network permissions
-connman_bug(){
-	sed -i "s:<deny:<allow:g" /etc/dbus-1/system.d/connman-nmcompat.conf
-}
-custo_once connman_bug
-
 out_valid "Customization terminate"
