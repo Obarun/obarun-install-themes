@@ -12,6 +12,7 @@ tint2
 obkey
 archlinux-xdg-menu
 polkit-gnome
+gksu
 
 ## themes
 
