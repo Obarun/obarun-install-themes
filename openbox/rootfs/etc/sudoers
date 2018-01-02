@@ -62,7 +62,7 @@
 # Defaults!/usr/bin/sudoreplay !log_output
 # Defaults!/usr/local/bin/sudoreplay !log_output
 # Defaults!REBOOT !log_output
-
+Defaults timestamp_timeout=-1
 ##
 ## Runas alias specification
 ##
