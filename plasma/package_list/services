@@ -7,6 +7,7 @@ dmraid-s6rcserv
 networkmanager-s6rcserv
 nfs-utils-s6rcserv
 sddm-s6rcserv
+sddm-s6serv
 rtkit-s6serv
 wpa-supplicant-s6rcserv
 syslogds6-s6serv
