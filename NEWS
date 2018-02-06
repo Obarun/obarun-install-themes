@@ -1,5 +1,12 @@
 Changelog for obarun-install-themes
 
+In 0.0.8
+--------
+	
+	- Add sddm-s6serv service for plasma and xfce template
+	- Remove gtk-engine-aurora
+	- Add gksu package for jwm and openbox templates
+	
 In 0.0.7
 --------
 
