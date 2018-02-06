@@ -6,6 +6,7 @@ dhcpcd-s6rcserv
 dmraid-s6rcserv
 networkmanager-s6rcserv
 nfs-utils-s6rcserv
+sddm-s6serv
 sddm-s6rcserv
 rtkit-s6serv
 wpa-supplicant-s6rcserv
