@@ -1,11 +1,14 @@
 ######One application per line, you can use # to comment a line, blank line are ignored
 
+cgmanager-s6serv
+consolekit-s6serv
 dbus-s6rcserv
 dbus-s6serv
 dhcpcd-s6rcserv
 dmraid-s6rcserv
 networkmanager-s6rcserv
 nfs-utils-s6rcserv
+ntpd-s6serv
 sddm-s6rcserv
 sddm-s6serv
 rtkit-s6serv

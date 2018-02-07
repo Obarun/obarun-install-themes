@@ -15,9 +15,10 @@ alsa-utils
 arandr 
 arch-install-scripts
 btrfs-progs 
+cgmanager
 colord
-crda
 consolekit2
+crda
 dbus
 ddrescue
 dmraid
@@ -36,6 +37,7 @@ libwacom
 nfs-utils
 notification-daemon
 ntfs-3g
+ntpd
 numlockx 
 parted 
 perl-file-mimeinfo 

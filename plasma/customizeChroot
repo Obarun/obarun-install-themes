@@ -59,6 +59,12 @@ config_s6(){
 	cp -ra /etc/s6-serv/available/classic/syslogds6 /etc/s6-serv/enabled/classic/
 	out_action "Enable dbus service"
 	cp -ra /etc/s6-serv/available/classic/dbus /etc/s6-serv/enabled/classic/
+	out_action "Enable consolekit service"
+	cp -ra /etc/s6-serv/available/classic/consolekit /etc/s6-serv/enabled/classic/
+	out_action "Enable ntpd service"
+	cp -ra /etc/s6-serv/available/classic/ntpd /etc/s6-serv/enabled/classic/
+	out_action "Enable cgmanager service"
+	cp -ra /etc/s6-serv/available/classic/cgmanager /etc/s6-serv/enabled/classic/
 	
 	out_action "Create Live database"
 	s6opts add live bundle-Networkmanager
