@@ -37,7 +37,7 @@ libwacom
 nfs-utils
 notification-daemon
 ntfs-3g
-ntpd
+openntpd
 numlockx 
 parted 
 perl-file-mimeinfo 
