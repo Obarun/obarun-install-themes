@@ -21,6 +21,7 @@ xcb-util-renderutil
 
 ##			driver for xorg
 
+xf86-input-synaptics
 xf86-input-vmmouse
 xf86-video-ati
 xf86-video-intel

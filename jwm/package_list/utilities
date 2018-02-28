@@ -32,7 +32,6 @@ libbsd
 libcups
 libinput
 libpulse
-libsynaptics
 libwacom
 nfs-utils
 notification-daemon
