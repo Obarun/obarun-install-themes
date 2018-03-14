@@ -90,11 +90,5 @@ config_pulse(){
 }
 custo_once config_pulse
 
-config_networkmanager(){
-	echo "[main]" >> /etc/NetworkManager/NetworkManager.conf
-	echo "dhcp=dhclient" >> /etc/NetworkManager/NetworkManager.conf
-}
-custo_once config_networkmanager
-
 out_valid "Customization terminate"
 
