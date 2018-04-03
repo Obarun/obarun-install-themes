@@ -228,10 +228,10 @@
         <menu>root-menu</menu>
       </action>
     </keybind>
-    <keybind key="A-S-Tab">
+    <keybind key="A-C-Tab">
       <action name="PreviousWindow"/>
     </keybind>
-    <keybind key="C-A-Tab">
+    <keybind key="A-Tab">
       <action name="NextWindow">
         <panels>yes</panels>
         <desktop>yes</desktop>
