@@ -1,5 +1,13 @@
 Changelog for obarun-install-themes
 
+In 0.0.9
+-------
+
+	- Bugs fix
+	- Add consolekit,ntpd,cgmanager as services
+	- Replace libsynaptics by xf86-input-synaptics
+	- Fix networkmanager configuration file
+
 In 0.0.8
 --------
 	
