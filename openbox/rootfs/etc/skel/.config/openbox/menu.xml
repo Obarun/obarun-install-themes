@@ -75,7 +75,7 @@
   </item>
   <item label="Spacefm root" icon="/usr/share/icons/Faenza/apps/24/file-manager.png">
     <action name="Execute">
-      <command>gksu spacefm</command>
+      <command>sudo -A spacefm</command>
     </action>
   </item>
   <item label="Midori" icon="/usr/share/icons/Faenza/apps/24/midori.png">
@@ -90,7 +90,7 @@
   </item>
   <item label="Geany root" icon="/usr/share/icons/Faenza/apps/24/geany.png">
     <action name="Execute">
-      <command>gksu geany</command>
+      <command>sudo -A geany</command>
     </action>
   </item>
   <item label="Terminator" icon="/usr/share/icons/Faenza/apps/24/terminator.png">
