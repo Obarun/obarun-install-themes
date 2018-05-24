@@ -63,9 +63,7 @@ config_s6(){
 	cp -ra /etc/s6-serv/available/classic/consolekit /etc/s6-serv/enabled/classic/
 	out_action "Enable ntpd service"
 	cp -ra /etc/s6-serv/available/classic/ntpd /etc/s6-serv/enabled/classic/
-	out_action "Enable cgmanager service"
-	cp -ra /etc/s6-serv/available/classic/cgmanager /etc/s6-serv/enabled/classic/
-	
+		
 	out_action "Create Live database"
 	s6opts add live bundle-Networkmanager
 	s6opts compile Live live	
@@ -82,6 +80,12 @@ config_s6(){
 	su "${NEWUSER}" -c "s6opts checklog dbus"
 }
 custo_once config_s6
+
+config_homedirectories() {
+	out_action "Create \"well known\" ${NEWUSER} directories"
+	su "${NEWUSER}" -c "xdg-user-dirs-update"
+}
+custo_once config_homedirectories
 
 ##      Configure pulseaudio
 

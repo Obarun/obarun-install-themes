@@ -62,7 +62,7 @@
 <menu id="root-menu" label="Openbox 3">
   <item label="Run program">
     <action name="Execute">
-      <command>gmrun</command>
+      <command>rofi -combi-modi window,drun -show combi</command>
     </action>
   </item>
   <separator/>
@@ -126,6 +126,11 @@
   <separator/>
   <item label="Reconfigure" icon="/usr/share/icons/Faenza/actions/24/system-restart-panel.png">
     <action name="restart"/>
+  </item>
+   <item label="Lockscreen" icon="/usr/share/icons/Faenza/actions/24/gnome-lockscreen.png">
+    <action name="Execute">
+      <command>ob-lockscreen -i /usr/share/obarun/ob-lockscreen/oblock.png</command>
+    </action>
   </item>
   <item label="Exit" icon="/usr/share/icons/Faenza/actions/24/exit.png">
     <action name="Execute">

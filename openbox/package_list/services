@@ -1,11 +1,9 @@
 ######One application per line, you can use # to comment a line, blank line are ignored
 
-
 avahi-s6rcserv
 dbus-s6rcserv
 dbus-s6serv
 dhcpcd-s6rcserv
-cgmanager-s6serv
 connmand-s6rcserv
 consolekit-s6serv
 dmraid-s6rcserv
