@@ -1,5 +1,15 @@
 Changelog for obarun-install-themes
 
+In 0.1.0
+--------
+	
+	- Replace gksu by own script
+	- Replace gmrun by rofi
+	- Add a screenlocker
+	- Remove cgmanager service
+	- Add new wallpapers
+	- Create "well-know" user directories
+
 In 0.0.9
 -------
 
