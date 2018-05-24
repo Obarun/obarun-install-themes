@@ -1,5 +1,27 @@
 Changelog for obarun-install-themes
 
-In 0.0.5
+In 0.0.9
+-------
+
+	- Bugs fix
+	- Add consolekit,ntpd,cgmanager as services
+	- Replace libsynaptics by xf86-input-synaptics
+	- Fix networkmanager configuration file
+
+In 0.0.8
+--------
+	
+	- Add sddm-s6serv service for plasma and xfce template
+	- Remove gtk-engine-aurora
+	- Add gksu package for jwm and openbox templates
+	
+In 0.0.7
 --------
 
+	- Pass to Arc-Darker themes
+	- Add polkit-gnome agent at startup
+	- Add xf86-video-intel as driver
+	- Replace obmenu-generator by archlinux-xdg-menu
+	- Add minimal template
+	- Change wheel group permissions : Deny sudo command without password
+	- Add libbsd for Mac compatibility

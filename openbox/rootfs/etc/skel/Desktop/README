@@ -1,11 +1,12 @@
 Welcome to Obarun !
 
-You can find more at http://obarun.org.
-You have a forum here http://forum.obarun.org
+You can find more at https://obarun.org.
+We have a forum here https://forum.obarun.org
+We have a wiki here https://wiki.obarun.org
 
 It's not a distro. It's based on archlinux but with a lot of changes.
 
-Only available for x64_86 architecture
+Only available for x86_64 architecture
 
 root login : root
 user login : obarun
@@ -17,5 +18,7 @@ Enjoy it :).
 Eric Vidal <eric@obarun.org>
 
 hotkeys :
-ALT+SPACE to display the main menu of openbox
-ALT+F2 to launch gmrun
+ALT+SPACE to launch gmrun
+ALT+F2 to display the jwm root menu
+Right mouse button on the clock to see the desktop
+Windows tiling can be made with the CTRL+ALT up,down,right and left keyboard key.

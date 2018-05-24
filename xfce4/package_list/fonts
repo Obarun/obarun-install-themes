@@ -3,7 +3,6 @@
 ##				fonts
 
 fontconfig 
-fontsproto 
 gsfonts 
 ttf-liberation
 cantarell-fonts

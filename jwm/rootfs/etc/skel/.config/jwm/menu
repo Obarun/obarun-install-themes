@@ -28,12 +28,12 @@
 	
 	<RootMenu onroot="3">
 		 <Program label="Spacefm">spacefm</Program>
-		 <Program label="Spacefm root">sudo spacefm</Program>
+		 <Program label="Spacefm root">sudo -A spacefm</Program>
 	</RootMenu>
 	
 	<RootMenu onroot="4">
 		<Program label="Geany">geany</Program>
-		<Program label="Geany root">sudo geany</Program>
+		<Program label="Geany root">sudo -A geany</Program>
 	</RootMenu>
 </JWM>
 

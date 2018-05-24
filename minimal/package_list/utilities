@@ -19,7 +19,6 @@ dmraid
 dosfstools 
 git
 libinput
-libsynaptics
 libwacom
 nfs-utils
 ntfs-3g

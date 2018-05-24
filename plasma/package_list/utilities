@@ -31,7 +31,6 @@ libbsd
 libinput
 libpulse
 libcups
-libsynaptics
 libwacom
 nfs-utils
 ntfs-3g

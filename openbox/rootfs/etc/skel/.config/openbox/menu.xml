@@ -57,18 +57,6 @@
       <command>geany ~/.config/openbox/menu.xml</command>
     </action>
   </item>
-  <menu id="obmenugenerator" label="ObmenuGenerator" icon="/usr/share/icons/Faenza/categories/24/configuration_section.png">
-    <item label="Config" icon="/usr/share/icons/Faenza/mimetypes/scalable/text-plain.svg">
-      <action name="Execute">
-        <command>geany ~/.config/obmenu-generator/config.pl</command>
-      </action>
-    </item>
-    <item label="Schema" icon="/usr/share/icons/Faenza/mimetypes/scalable/text-plain.svg">
-      <action name="Execute">
-        <command>geany ~/.config/obmenu-generator/schema.pl</command>
-      </action>
-    </item>
-  </menu>
 </menu>
 
 <menu id="root-menu" label="Openbox 3">
@@ -78,7 +66,7 @@
     </action>
   </item>
   <separator/>
-  <menu id="applications" label="Software" execute="obmenu-generator -u -i" icon="/usr/share/icons/Faenza/categories/24/applications-other.png"/>
+  <menu id="applications" label="Software" execute="xdg_menu --format openbox3-pipe --root-menu /etc/xdg/menus/arch-applications.menu" icon="/usr/share/icons/Faenza/categories/24/applications-other.png"/>
   <separator/>
   <item label="Spacefm" icon="/usr/share/icons/Faenza/apps/24/file-manager.png">
     <action name="Execute">
@@ -87,7 +75,7 @@
   </item>
   <item label="Spacefm root" icon="/usr/share/icons/Faenza/apps/24/file-manager.png">
     <action name="Execute">
-      <command>sudo spacefm</command>
+      <command>sudo -A spacefm</command>
     </action>
   </item>
   <item label="Midori" icon="/usr/share/icons/Faenza/apps/24/midori.png">
@@ -102,7 +90,7 @@
   </item>
   <item label="Geany root" icon="/usr/share/icons/Faenza/apps/24/geany.png">
     <action name="Execute">
-      <command>sudo geany</command>
+      <command>sudo -A geany</command>
     </action>
   </item>
   <item label="Terminator" icon="/usr/share/icons/Faenza/apps/24/terminator.png">

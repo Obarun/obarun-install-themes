@@ -10,7 +10,8 @@ kickshaw
 obshutdown-git
 tint2 
 obkey
-obmenu-generator
+archlinux-xdg-menu
+polkit-gnome
 
 
 ## themes
@@ -19,6 +20,5 @@ arc-gtk-theme
 faenza-icon-theme
 hicolor-icon-theme 
 gtk-update-icon-cache 
-gtk-engine-aurora
 gtk-engine-murrine
 gtk-engines
