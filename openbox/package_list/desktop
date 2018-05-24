@@ -12,7 +12,12 @@ tint2
 obkey
 archlinux-xdg-menu
 polkit-gnome
-
+i3lock
+rofi
+gsimplecal
+xdg-user-dirs
+imagemagick
+scrot
 
 ## themes
 

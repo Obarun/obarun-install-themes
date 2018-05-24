@@ -175,7 +175,7 @@
     <chainQuitKey>C-g</chainQuitKey>
     <keybind key="A-F2">
       <action name="Execute">
-        <command>gmrun</command>
+        <command>rofi -combi-modi window,drun -show combi</command>
       </action>
     </keybind>
     <keybind key="C-A-Left">

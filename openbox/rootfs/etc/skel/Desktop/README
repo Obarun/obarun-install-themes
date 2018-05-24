@@ -1,24 +1,41 @@
 Welcome to Obarun !
 
-You can find more at https://obarun.org.
-We have a forum here https://forum.obarun.org
-We have a wiki here https://wiki.obarun.org
-
-It's not a distro. It's based on archlinux but with a lot of changes.
+It's not a distro, but a build concept. It's based on archlinux but with a lot of changes.
 
 Only available for x86_64 architecture
+
+You can install Obarun following this wiki page :
+https://wiki.obarun.org/doku.php?id=installation
+
+
+Enjoy it :)
+
+LOGIN AND PASSWORD
+------------------
 
 root login : root
 user login : obarun
 root password : toor
 obarun password : toor
 
-Enjoy it :).
+HOTKEYS ON JWM DESKTOP
+----------------------
 
-Eric Vidal <eric@obarun.org>
-
-hotkeys :
-ALT+SPACE to launch gmrun
+ALT+SPACE to launch rofi
 ALT+F2 to display the jwm root menu
-Right mouse button on the clock to see the desktop
+Right mouse button on the clock to see the calendar
 Windows tiling can be made with the CTRL+ALT up,down,right and left keyboard key.
+ALT+right/left to go to next previous desktop.
+
+FUTHERS INFORMATIONS AND CONTACTS
+---------------------------------
+
+We have a site : https://obarun.org.
+We have a github : https://github.com/Obarun
+We have a organization for packages maintenance : https://github.com/obarun-pkgbuild
+We have a forum : https://forum.obarun.org
+We have a wiki : https://wiki.obarun.org
+We have a channel on freenode at #obarun
+
+To contact the main dev
+Eric Vidal <eric@obarun.org>

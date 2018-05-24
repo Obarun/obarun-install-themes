@@ -7,7 +7,12 @@ xdgmenumaker
 obshutdown-git
 lxappearance
 polkit-gnome
-
+i3lock
+rofi
+gsimplecal
+xdg-user-dirs
+imagemagick
+scrot
 
 ## themes
 

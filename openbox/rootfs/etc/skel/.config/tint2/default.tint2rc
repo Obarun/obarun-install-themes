@@ -105,5 +105,6 @@ bat2_font = Sans 12
 battery_font_color = #FFFFFF 100
 battery_padding = 0 0
 battery_background_id = 0
+battery_rclick_command = gsimplecal
 
 # End of config

@@ -28,7 +28,7 @@
 		<Spacer width="5"/>
 		
 		<!-- clock -->
-		<Clock format="%H : %M">showdesktop</Clock>
+		<Clock format="%H : %M">exec:gsimplecal</Clock>
 		<Spacer width="5"/>
 	</Tray>
 </JWM>

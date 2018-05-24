@@ -14,7 +14,7 @@
     <Key key="Escape">escape</Key>
     
     <!-- Key applications. -->
-	<Key mask="A" key="space">exec:gmrun</Key>
+	<Key mask="A" key="space">exec:rofi -show drun</Key>
 	<Key mask="A" key="F2">root:2</Key>
 	<!-- Key toggle. -->
     <Key mask="CA" key="Up">maxtop</Key>
