@@ -2,18 +2,20 @@
 
 ##			specific applications for the desktop
 
+accountsservice
+dhclient
+gvfs
+libmbim
+libmm-glib
+libnm-glib
+media-player-info
+modemmanager
+networkmanager
+pulseaudio
 qt5-base
 qt5-xcb-private-headers
 sddm
-libmm-glib
-libnm-glib
-networkmanager
-modemmanager
-libmbim
-pulseaudio
-accountsservice
-media-player-info
-dhclient
+xdg-user-dirs
 
 libxfce4ui  
 libxfce4util
@@ -34,4 +36,4 @@ gtk-engine-murrine
 gtk-engines
 gnome-icon-theme
 gnome-icon-theme-symbolic
-gnome-themes-standard
+gnome-themes-extra
