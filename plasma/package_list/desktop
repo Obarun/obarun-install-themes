@@ -4,6 +4,7 @@
 accountsservice
 dhclient
 gvfs
+gvfs-smb
 libmbim
 libmm-glib
 libnm-glib
